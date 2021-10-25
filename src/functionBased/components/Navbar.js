@@ -18,15 +18,13 @@ const Navbar = () => {
   return (
     <nav className="navBar">
       <ul>
-        {links.map((link) => {
-          return (
-            <li key={link.id}>
-              <NavLink to={link.path} activeClassName="active-link">
-                {link.text}
-              </NavLink>
-            </li>
-          );
-        })}
+        {links.map((link) => (
+          <li key={link.id}>
+            <NavLink to={link.path} activeClassName="active-link">
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

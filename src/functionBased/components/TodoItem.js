@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { PropTypes } from 'prop-types';
 import styles from './TodoItem.module.css';
 
 const TodoItem = (props) => {
   const [editing, setEditing] = useState(false);
 
-  useEffect(() => {
-    return () => {
-      console.log('Cleaning up...');
-    };
-  }, []);
+  useEffect(() => () => {}, []);
 
   const handleEditing = () => {
     setEditing(true);
@@ -27,10 +24,11 @@ const TodoItem = (props) => {
     textDecoration: 'line-through',
   };
 
-  const { completed, id, title } = props.todo;
+  const { todo } = props;
+  const { completed, id, title } = todo;
 
-  let viewMode = {};
-  let editMode = {};
+  const viewMode = {};
+  const editMode = {};
 
   if (editing) {
     viewMode.display = 'none';
@@ -47,7 +45,9 @@ const TodoItem = (props) => {
           checked={completed}
           onChange={() => props.handleChangeProps(id)}
         />
-        <button onClick={() => props.deleteTodoProps(id)}>Delete</button>
+        <button type="button" onClick={() => props.deleteTodoProps(id)}>
+          Delete
+        </button>
         <span style={completed ? completedStyle : null}>{title}</span>
       </div>
       <input
@@ -62,6 +62,13 @@ const TodoItem = (props) => {
       />
     </li>
   );
+};
+
+TodoItem.propTypes = {
+  setUpdate: PropTypes.func.isRequired,
+  deleteTodoProps: PropTypes.func.isRequired,
+  handleChangeProps: PropTypes.func.isRequired,
+  todo: PropTypes.node.isRequired,
 };
 
 export default TodoItem;
