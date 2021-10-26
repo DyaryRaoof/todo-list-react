@@ -1,59 +1,36 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Todo List React App
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+"Todo List React App" is a website for all fans who use todos. It is a Single Page App (SPA) that allows users to:
+- Add new todos.
+- Edit todos.
+- Delete todos
+- Mark todo as completed 
+- Navigate to about page.
+- Navigate to about author page.
+- Navigate to about app page.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- React js
+- create-react-app
+- JSX
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+- Clone the repository with git clone https://github.com/DyaryRaoof/todo-list-react.git;
+- Open the cloned folder on the IDE of your choice;
+- Install dependencies with npm i;
+- Use npm start to start the website;
 ## Authors
 
-👤 **Author1**
+👤 **Dyary Raoof Bayz**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@DyaryRaoof](https://github.com/DyaryRaoof)
+- Twitter: [@DyaryRaoof](https://twitter.com/DyaryRaoof)
+- LinkedIn: [@DyaryRaoof](https://linkedin.com/in/DyaryRaoof)
 
 ## 🤝 Contributing
 
@@ -68,8 +45,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
 
 ## 📝 License
 
